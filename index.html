@@ -378,8 +378,37 @@
         <button type="button" class="close-btn" data-modal-close> <svg class="btn-svg" width="11" height="11" >
           <use href="./images/sprite-svg.svg#icon-vector-x"></use>
       </svg></button>
+      <form action="#" class="modal-form">
+
+        <label class="modal-form-field">
+            Имя*
+            <span class="modal-form-field-wrapper">
+                <input type="text" name="user-name" class="modal-form-input" required>
+                <svg width="12" height="12" class="modal-form-svg-icon">
+                    <use href="./images/sprite.svg#name"></use>
+                </svg>
+            </span>
+        </label>
+
+        <label class="modal-form-field">
+            Телефон*
+            <input type="tel" name="user-phone" class="modal-form-input" required>
+        </label>
+
+        <textarea name="user-message" id="" cols="30" rows="10" class="modal-form-message"></textarea>
+        <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy"
+            class="modal-form-policy visually-hidden">
+        <label for="check-policy" class="modal-form-policy-label">
+            Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+        </label>
+        <button type="submit" class="modal-form-btn">отправить</button>
+    </form>
+</div>
+</div>
+
     </div>
 </div>
+
   <script src="./js/modal.js"></script>
 </body>
 </html>

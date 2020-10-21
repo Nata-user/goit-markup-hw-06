@@ -991,10 +991,15 @@ modal-form-field-wrapper {
   background-repeat: no-repeat;
   display: flex;
   background-position: right center;
-  background-position: 
   }
-
-
+  .footer .text-footer {
+    margin-bottom: 20px;
+    padding-left: 45px;
+  }
+  .contact-form-wrapper {
+   text-align: start;
+    align-items: flex-start;
+  }
 
 .contact-form-btn:hover,
 .contact-form-btn:focus,

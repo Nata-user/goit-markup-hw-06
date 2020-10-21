@@ -990,10 +990,8 @@ modal-form-field-wrapper {
   background-image: url("../images/svg-for-sprite/telegram.svg");
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-end;
-  align-self: flex-end;
   background-position: right center;
-
+  background-position: 
   }
 
 

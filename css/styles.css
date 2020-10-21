@@ -1088,4 +1088,17 @@ margin-bottom: 10px;
 }
 
 /*============ END MODAL FORM ============*/
-"./images/sprite-svg.svg#icon-icon-send"
+
+.modal-form-btn::after {
+  position: absolute;
+   top: 50%;
+  left: 32px; 
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  outline: 1px solid #fff;
+  margin-right: 7px;
+  background-image: url("../images/svg-for-sprite/telegram.svg");
+  background-size: contain;
+ }

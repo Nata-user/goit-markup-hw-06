@@ -987,10 +987,16 @@ modal-form-field-wrapper {
     align-self: flex-start; 
   }
   .contact-form-wrapper .modal-form-btn-f {
-  align-self: flex-start;
   background-image: url("../images/svg-for-sprite/telegram.svg");
-background-repeat: no-repeat;
-}
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  background-position: right center;
+
+  }
+
+
 
 .contact-form-btn:hover,
 .contact-form-btn:focus,

@@ -520,6 +520,7 @@ ul {
   display: flex;
 }
 .footer {
+  height: 252px;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -884,9 +885,8 @@ modal-btn-1 {
 /*  ============  CONTACT FORM  ============ */
 .contact-form-section {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  transform: translate(-80px, -125px);
+  justify-self: flex-end;
+  transform: translate(610px, -125px);
 }
 .text-footer {
   color: #ffffff;

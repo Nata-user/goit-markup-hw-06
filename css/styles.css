@@ -50,7 +50,7 @@ ul {
 .navigation-list {
   display: flex;
 }
-.logo-1 {
+.header .logo-1 {
   margin-right: 90px;
 }
 .navigation-list-item:not(:last-child) {
@@ -520,7 +520,7 @@ ul {
   display: flex;
 }
 .footer {
-  height: 252px;
+  display: flex;
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -533,9 +533,10 @@ ul {
 }
 .footer .contact-all {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: start;
 }
+
 .footer .social {
   display: flex;
   width: 206px;
@@ -883,11 +884,7 @@ modal-btn-1 {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*  ============  CONTACT FORM  ============ */
-.contact-form-section {
-  display: flex;
-  justify-self: flex-end;
-  transform: translate(610px, -125px);
-}
+
 .text-footer {
   color: #ffffff;
   font-style: normal;
@@ -897,11 +894,17 @@ modal-btn-1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.contact-form {
-  display: flex;
-  justify-content: space-between;
-  width: 570px;
-  flex-direction: row;
+.contact-form{
+ width: 570px; 
+ display: flex;
+ justify-content: flex-start;
+ text-align: start;
+ flex-direction: row;
+ padding-top: 20px;
+}
+.contact-form-wrapper {
+  padding-left: 90px;
+  padding-top: 12px;
 }
 .modal-form-btn-f {
   transform: translate(0px, 10px);
@@ -928,6 +931,7 @@ modal-form-field-wrapper {
   border-radius: 4px;
   padding-left: 16px;
   background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
   margin-right: 10px;
 }
 .contact-form-input:focus,
@@ -983,7 +987,7 @@ modal-form-field-wrapper {
   transform: translate(110px, 20px);
 }
 
-.contact-form-wrapper .modal-form-btn-f {
+.modal-form-btn-f {
   background-image: url("../images/svg-for-sprite/telegram.svg");
   background-repeat: no-repeat;
   display: flex;
@@ -993,7 +997,7 @@ modal-form-field-wrapper {
   background-position: right center;
   background-position-x: 120px;
   height: 50px;
-  transform: translate(0px, 6px);
+ 
 }
 .footer .text-footer {
   margin-bottom: 20px;
@@ -1123,9 +1127,8 @@ modal-form-message {
   content: "";
   width: 16px;
   height: 15px;
-  outline: 1px solid #ffffff;
+  outline: 1px solid #212121;
   margin-right: 7px;
-  transform: translate(0px, 4px);
 }
 
 .modal-form-policy-label::before:hover {
@@ -1133,7 +1136,8 @@ modal-form-message {
 }
 
 .modal-form-policy:checked + .modal-form-policy-label::before {
-  border: 1px solid #fff;
+  background-color: #2196f3;
+  outline: 1px solid #2196f3;
   background-image: url("../images/svg-for-sprite/icon-check.svg");
 }
 .visually-hidden {
